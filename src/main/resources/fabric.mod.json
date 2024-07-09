@@ -16,7 +16,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.tutorial.mod.Tutorialmod"
+			"com.tutorial.mod.Tutorialmod",
+			"com.tutorial.mod.ModItemsInitializer"
 		],
 		"client": [
 			"com.tutorial.mod.TutorialmodClient"
