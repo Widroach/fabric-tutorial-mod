@@ -10,4 +10,7 @@ public class SuspiciousDust {
             new Item(new Item.Settings().food(FOOD_COMPONENT)),
             "suspicious_dust");
 
+    public static void initialize(){
+    }
+
 }
