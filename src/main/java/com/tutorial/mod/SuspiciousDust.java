@@ -14,7 +14,7 @@ public class SuspiciousDust {
 
     public static void initialize(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-            .register((itemGroup) -> itemGroup.add(SuspiciousDust.SUSPICIOUS_DUST));
+            .register(itemGroup -> itemGroup.add(SuspiciousDust.SUSPICIOUS_DUST));
     }
 
 }
