@@ -9,7 +9,7 @@ public class ModItemsInitializer implements ModInitializer {
     public void onInitialize() {
         SuspiciousDust.initialize();
         AncientSteelSword.initialize();
-        ModAmorMaterials.initialize();
+        VikingArmor.initialize();
     }
 
 }
