@@ -2,6 +2,7 @@ package com.tutorial.mod;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -22,4 +23,9 @@ public class VikingArmor {
             0.0F,
             0.0F,
             false);
+
+    public static final Item VIKING_HELMET = ModItems.register(new ArmorItem(VIKING_ARMOR, ArmorItem.Type.HELMET, new Item.Settings()), "viking_helmet");
+    public static final Item VIKING_VEST = ModItems.register(new ArmorItem(VIKING_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Settings()), "viking_vest");
+    public static final Item VIKING_LEGGINGS = ModItems.register(new ArmorItem(VIKING_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Settings()), "viking_leggings");
+    public static final Item VIKING_BOOTS = ModItems.register(new ArmorItem(VIKING_ARMOR, ArmorItem.Type.BOOTS, new Item.Settings()), "viking_boots");
 }
