@@ -28,8 +28,4 @@ public class ModAmorMaterials {
 
         return RegistryEntry.of(material);
     }
-
-    public static void initialize() {
-        throw new UnsupportedOperationException("Method not implemented");
-    }
 }
