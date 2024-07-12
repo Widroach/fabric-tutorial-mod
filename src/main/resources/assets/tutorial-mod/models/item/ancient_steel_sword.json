@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "tutorial-mod:item/ancient_steel_sword"
+    }
+}
