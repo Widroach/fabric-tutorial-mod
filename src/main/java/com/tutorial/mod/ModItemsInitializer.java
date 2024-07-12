@@ -8,6 +8,7 @@ public class ModItemsInitializer implements ModInitializer {
     @Override
     public void onInitialize() {
         SuspiciousDust.initialize();
+        AncientSteelSword.initialize();
     }
 
 }
