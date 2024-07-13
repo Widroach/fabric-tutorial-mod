@@ -9,6 +9,7 @@ public class ModItemsInitializer implements ModInitializer {
     @Override
     public void onInitialize() {
         modItems.addItem(new TheMightyStick(new Item.Settings()), "the_mighty_stick");
+        modItems.addItem(new AncientSteelSword(new AncientSteelMaterial(), new Item.Settings()), "ancient_steel_sword");
     }
 
 }
