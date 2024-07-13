@@ -8,19 +8,14 @@ import net.minecraft.util.Identifier;
 import java.util.*;
 
 public class ModItems {
-    private final Set<Item> items = new HashSet<>();
 
-    public static Item register(Item item, String id) {
+    public void addItem(Item item, String id) {
+        register(item, id);
+    }
+
+    private Item register(Item item, String id) {
         Identifier itemID = Identifier.of("tutorial-mod", id);
 
         return Registry.register(Registries.ITEM, itemID, item);
-    }
-
-    public void addItem(Item item) {
-        items.add(item);
-    }
-
-    public Set<Item> getItems() {
-        return items;
     }
 }
