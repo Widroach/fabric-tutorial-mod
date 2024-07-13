@@ -4,5 +4,7 @@
     "item.tutorial-mod.viking_helmet": "Viking Helmet",
     "item.tutorial-mod.viking_vest": "Viking Vest",
     "item.tutorial-mod.viking_leggings": "Viking Leggings",
-    "item.tutorial-mod.viking_boots": "Viking Boots"
+    "item.tutorial-mod.viking_boots": "Viking Boots",
+
+    "itemGroup.tutorial-mod": "Tutorial Mod"
 }
