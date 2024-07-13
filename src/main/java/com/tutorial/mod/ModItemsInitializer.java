@@ -10,6 +10,7 @@ public class ModItemsInitializer implements ModInitializer {
         SuspiciousDust.initialize();
         AncientSteelSword.initialize();
         VikingArmor.initialize();
+        TutorialModItemGroup.initialize();
     }
 
 }
