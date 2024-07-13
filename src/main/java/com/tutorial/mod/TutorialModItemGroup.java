@@ -19,4 +19,17 @@ public class TutorialModItemGroup {
             .icon(() -> new ItemStack(AncientSteelSword.ANCIENT_STEEL_SWORD))
             .displayName(Text.translatable("itemGroup.tutorial-mod"))
             .build();
+
+    public static void initialize() {
+        Registry.register(Registries.ITEM_GROUP, TUTORIAL_MOD_ITEM_GROUP_KEY, TUTORIAL_MOD_ITEM_GROUP);
+
+        ItemGroupEvents.modifyEntriesEvent(TUTORIAL_MOD_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(SuspiciousDust.SUSPICIOUS_DUST);
+            itemGroup.add(AncientSteelSword.ANCIENT_STEEL_SWORD);
+            itemGroup.add(VikingArmor.VIKING_HELMET);
+            itemGroup.add(VikingArmor.VIKING_VEST);
+            itemGroup.add(VikingArmor.VIKING_LEGGINGS);
+            itemGroup.add(VikingArmor.VIKING_BOOTS);
+        });
+    }
 }
