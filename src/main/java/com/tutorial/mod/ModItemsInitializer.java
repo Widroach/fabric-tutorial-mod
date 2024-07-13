@@ -10,6 +10,9 @@ public class ModItemsInitializer implements ModInitializer {
     public void onInitialize() {
         modItems.addItem(new TheMightyStick(new Item.Settings()), "the_mighty_stick");
         modItems.addItem(new AncientSteelSword(new AncientSteelMaterial(), new Item.Settings()), "ancient_steel_sword");
+        modItems.addItem(
+                new SuspiciousDust(new Item.Settings().food(new SuspiciousDustFoodComponent().getFoodComponent())),
+                "suspicious_dust");
     }
 
 }
