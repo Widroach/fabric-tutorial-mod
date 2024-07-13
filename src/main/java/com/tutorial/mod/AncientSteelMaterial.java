@@ -1,6 +1,7 @@
 package com.tutorial.mod;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -36,7 +37,9 @@ public class AncientSteelMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(SuspiciousDust.SUSPICIOUS_DUST, Items.IRON_INGOT);
+        return Ingredient.ofItems(
+                new SuspiciousDust(new Item.Settings().food(new SuspiciousDustFoodComponent().getFoodComponent())),
+                Items.IRON_INGOT);
     }
 
 }
