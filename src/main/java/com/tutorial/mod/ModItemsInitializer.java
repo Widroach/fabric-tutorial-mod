@@ -12,9 +12,12 @@ import net.minecraft.item.Item;
 
 public class ModItemsInitializer implements ModInitializer {
     private static ModItems modItems = new ModItems();
+    private static TutorialModItemGroup tutorialModItemGroup = new TutorialModItemGroup();
 
     @Override
     public void onInitialize() {
+        tutorialModItemGroup.initialize();
+
         modItems.addItem(new TheMightyStick(new Item.Settings()), "the_mighty_stick");
         modItems.addItem(new AncientSteelSword(new AncientSteelMaterial(), new Item.Settings()), "ancient_steel_sword");
         modItems.addItem(
