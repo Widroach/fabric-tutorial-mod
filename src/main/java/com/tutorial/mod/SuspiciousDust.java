@@ -16,6 +16,9 @@ public class SuspiciousDust extends Item {
     private void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register(itemGroup -> itemGroup.add(this));
+            
+        ItemGroupEvents.modifyEntriesEvent(ModGroups.TUTORIAL_MOD_ITEM_GROUP_KEY)
+                .register(itemGroup -> itemGroup.add(this));
 
         CompostingChanceRegistry.INSTANCE.add(this, 0.3f);
         FuelRegistry.INSTANCE.add(this, 30 * 20);

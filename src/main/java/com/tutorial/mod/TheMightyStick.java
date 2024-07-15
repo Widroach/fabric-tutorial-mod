@@ -16,12 +16,15 @@ public class TheMightyStick extends Item {
 
     public TheMightyStick(Settings settings) {
         super(settings);
-        addToCustomItemGroup();
+        initialize();
     }
 
-    private void addToCustomItemGroup() {
+    public void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(itemGroup -> itemGroup.add(this));
+        ItemGroupEvents.modifyEntriesEvent(ModGroups.TUTORIAL_MOD_ITEM_GROUP_KEY)
+                .register(itemGroup -> itemGroup.add(this));
+
     }
 
     @Override
