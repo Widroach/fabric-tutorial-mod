@@ -1,7 +1,6 @@
 package com.tutorial.mod;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
