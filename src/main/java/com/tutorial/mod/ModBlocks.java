@@ -8,13 +8,12 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    private static Block betterDirt = new BetterDirt();
+    public static final Block BETTER_DIRT = new BetterDirt();
 
-    public Block getBetterDirt() {
-        return betterDirt;
+    private ModBlocks() {
     }
 
-    public Block register(Block block, String name, boolean shouldRegister) {
+    public static Block register(Block block, String name, boolean shouldRegister) {
 
         Identifier id = Identifier.of("tutorial-mod", name);
 
