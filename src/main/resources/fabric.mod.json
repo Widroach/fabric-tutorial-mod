@@ -17,7 +17,8 @@
 	"entrypoints": {
 		"main": [
 			"com.tutorial.mod.Tutorialmod",
-			"com.tutorial.mod.ModItemsInitializer"
+			"com.tutorial.mod.ModItemsInitializer",
+			"com.tutorial.mod.ModBlocksInitializer"
 		],
 		"client": [
 			"com.tutorial.mod.TutorialmodClient"
