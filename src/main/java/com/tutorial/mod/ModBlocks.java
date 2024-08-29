@@ -8,6 +8,11 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    private static Block betterDirt = new BetterDirt();
+
+    public Block getBetterDirt() {
+        return betterDirt;
+    }
 
     public Block register(Block block, String name, boolean shouldRegister) {
 
