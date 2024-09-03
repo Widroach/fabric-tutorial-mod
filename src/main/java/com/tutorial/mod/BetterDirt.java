@@ -3,7 +3,7 @@ package com.tutorial.mod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.block.Blocks;
 
 public class BetterDirt extends Block {
 
@@ -12,7 +12,7 @@ public class BetterDirt extends Block {
     }
 
     public BetterDirt() {
-        super(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRASS));
+        super(AbstractBlock.Settings.copy(Blocks.SANDSTONE));
         initialize();
     }
 
