@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.sound.BlockSoundGroup;
 
 public class BetterDirt extends Block {
 
@@ -12,7 +13,10 @@ public class BetterDirt extends Block {
     }
 
     public BetterDirt() {
-        super(AbstractBlock.Settings.copy(Blocks.SANDSTONE));
+        super(AbstractBlock.Settings.copy(Blocks.STONE)
+                .strength(0.5f, 0.5f)
+                .sounds(BlockSoundGroup.GRAVEL)
+                .requiresTool());
         initialize();
     }
 
