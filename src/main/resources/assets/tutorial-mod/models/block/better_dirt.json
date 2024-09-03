@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "tutorial-mod:blocks/better_dirt"
+        "all": "tutorial-mod:block/better_dirt"
     }
 }
